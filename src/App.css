@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+  margin: 20px;
+}
+.authoring-editor {
+  width: 90%;
+}
+
+.box {
+  min-width: 100px;
+  height: 40px;
+  background-color: black;
+}

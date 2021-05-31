@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import EditorComp from './Editor';
 import './App.css';
+// import {generate} from './mjml/App';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import {render} from 'mjml-react';
+// import {htmlOutput} from './mjml/mjm'
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.editorRef = React.createRef(null);
+  }
+
+  render() {
+    return (
+      <div class="container">
+        <h2>Email Authoring Tool</h2>
+        <EditorComp />
+      </div>
+    );
+  }
 }
+
 
 export default App;
