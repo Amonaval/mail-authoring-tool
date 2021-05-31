@@ -14,7 +14,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <h2>Email Authoring Tool</h2>
         <EditorComp />
       </div>
